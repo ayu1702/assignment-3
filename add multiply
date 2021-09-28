@@ -1,0 +1,41 @@
+package addmul;
+import java.util.*;
+public class AddMul {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		      
+		        Scanner sc = new Scanner(System.in);
+		        
+		        System.out.println("Enter numbers A and B");
+				int a = sc.nextInt();
+				int b = sc.nextInt();
+		        
+		        System.out.println("enter 1 for sum or 2 for multiplication : ");
+		        int operator=sc.nextInt();
+		        
+		        if(operator==1){  
+		            int sum = add(a,b);
+		            System.out.println("sum = " +sum);
+		            
+		         if(operator==2){ 
+		            int mul=multiply(a,b);
+		            System.out.println(" mul ="+mul);
+		        } }
+		        
+		        else {
+					System.out.println("Press valid number");
+				}
+		        
+		    } 
+    public static int add(int a,int b){ 
+		        return a+b;
+		    } 
+	
+    public static int multiply (int a,int b){
+		        return a*b;
+		    }
+		    
+		}
+		
+
